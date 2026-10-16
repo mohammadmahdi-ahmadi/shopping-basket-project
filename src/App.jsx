@@ -4,7 +4,6 @@ import { useState } from "react";
 
 function App() {
   const [basket, setBasket] = useState([]);
-  
   function handleAdd(product) {
     setBasket([...basket, product]);
   }
@@ -30,7 +29,7 @@ function App() {
 
       <main className="shop-container">
         <ProductList handleAdd={handleAdd} />
-        <Basket basket={basket} handledelete={handleDelete} total={totalItem} />
+        <Basket basket={basket} handleDelete={handleDelete} total={totalItem} />
       </main>
     </div>
   );

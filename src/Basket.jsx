@@ -1,4 +1,4 @@
-function Basket({ basket , handledelete , total }) {
+function Basket({ basket , handleDelete , total }) {
   return (
     <section className="basket-section">
       <h2>My Basket</h2>
@@ -17,7 +17,7 @@ function Basket({ basket , handledelete , total }) {
                   <p>${item.price}</p>
                 </div>
 
-                <button className="remove-btn" onClick={()=> handledelete(item.id)}>Remove</button>
+                <button className="remove-btn" onClick={()=> handleDelete(item.id)}>Remove</button>
               </div>
             ))}
           </div>
